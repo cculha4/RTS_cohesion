@@ -1,0 +1,7 @@
+#!/bin/sh
+
+rm -r restart*
+rm -r DATA*
+rm -r post*
+rm -r log*
+rm -r post*

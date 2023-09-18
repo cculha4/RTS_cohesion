@@ -1,0 +1,4 @@
+#!/bin/sh
+mpirun -np 10 lmp_auto -in in.SAMPLE
+mpirun -np 10 lmp_auto -in in.COLLAPSE
+

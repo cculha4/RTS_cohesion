@@ -1,0 +1,133 @@
+LIGGGHTS (Version LIGGGHTS-PUBLIC 3.8.0, compiled 2023-05-09-09:17:38 by cfdlab, git commit bbd23c8521fe0a4f3f5bfd0d3dc9a7dddd68d90b)
+#Collapse by Thien Phan
+
+atom_style	sphere
+atom_modify	map array
+boundary	f f f
+newton		off
+echo		none
+WARNING: Restart file used different # of processors (../read_restart.cpp:574)
+WARNING: Restart file used different 3d processor grid (../read_restart.cpp:587)
+  orthogonal box = (-0.1 -0.1 -0.1) to (0.9 0.9 0.9)
+  3 by 2 by 2 MPI processor grid
+  18075 atoms
+WARNING: Changing thermo_temp compute object. This object is deprecated and will be removed in the future. (../compute.cpp:161)
+INFO: mesh file (mesh/z2.stl) is required, but data will be taken from restart file (../fix_mesh.cpp:429)
+Resetting global state of Fix z1wall Style mesh/surface/stress from restart file info
+INFO: mesh file (mesh/z1.stl) is required, but data will be taken from restart file (../fix_mesh.cpp:429)
+Resetting global state of Fix z2wall Style mesh/surface/stress from restart file info
+INFO: mesh file (mesh/y1.stl) is required, but data will be taken from restart file (../fix_mesh.cpp:429)
+Resetting global state of Fix y1wall Style mesh/surface/stress from restart file info
+INFO: mesh file (mesh/y2.stl) is required, but data will be taken from restart file (../fix_mesh.cpp:429)
+Resetting global state of Fix y2wall Style mesh/surface/stress from restart file info
+INFO: mesh file (mesh/y2sample.stl) is required, but data will be taken from restart file (../fix_mesh.cpp:429)
+Resetting global state of Fix y2samplewall Style mesh/surface/stress from restart file info
+INFO: mesh file (mesh/x1.stl) is required, but data will be taken from restart file (../fix_mesh.cpp:429)
+Resetting global state of Fix x1wall Style mesh/surface/stress from restart file info
+INFO: mesh file (mesh/x2.stl) is required, but data will be taken from restart file (../fix_mesh.cpp:429)
+Resetting global state of Fix x2wall Style mesh/surface/stress from restart file info
+INFO: mesh file (mesh/x2sample.stl) is required, but data will be taken from restart file (../fix_mesh.cpp:429)
+Resetting global state of Fix x2samplewall Style mesh/surface/stress from restart file info
+Resetting global state of Fix n_neighs_mesh_z1wall Style property/atom from restart file info
+Resetting per-atom state of Fix n_neighs_mesh_z1wall Style property/atom from restart file info
+Resetting global state of Fix tracker_z1wall Style contacthistory/mesh from restart file info
+Resetting per-atom state of Fix tracker_z1wall Style contacthistory/mesh from restart file info
+Resetting global state of Fix n_neighs_mesh_z2wall Style property/atom from restart file info
+Resetting per-atom state of Fix n_neighs_mesh_z2wall Style property/atom from restart file info
+Resetting global state of Fix tracker_z2wall Style contacthistory/mesh from restart file info
+Resetting per-atom state of Fix tracker_z2wall Style contacthistory/mesh from restart file info
+Resetting global state of Fix n_neighs_mesh_y1wall Style property/atom from restart file info
+Resetting per-atom state of Fix n_neighs_mesh_y1wall Style property/atom from restart file info
+Resetting global state of Fix tracker_y1wall Style contacthistory/mesh from restart file info
+Resetting per-atom state of Fix tracker_y1wall Style contacthistory/mesh from restart file info
+Resetting global state of Fix n_neighs_mesh_y2wall Style property/atom from restart file info
+Resetting per-atom state of Fix n_neighs_mesh_y2wall Style property/atom from restart file info
+Resetting global state of Fix tracker_y2wall Style contacthistory/mesh from restart file info
+Resetting per-atom state of Fix tracker_y2wall Style contacthistory/mesh from restart file info
+Resetting global state of Fix n_neighs_mesh_x1wall Style property/atom from restart file info
+Resetting per-atom state of Fix n_neighs_mesh_x1wall Style property/atom from restart file info
+Resetting global state of Fix tracker_x1wall Style contacthistory/mesh from restart file info
+Resetting per-atom state of Fix tracker_x1wall Style contacthistory/mesh from restart file info
+Resetting global state of Fix n_neighs_mesh_x2wall Style property/atom from restart file info
+Resetting per-atom state of Fix n_neighs_mesh_x2wall Style property/atom from restart file info
+Resetting global state of Fix tracker_x2wall Style contacthistory/mesh from restart file info
+Resetting per-atom state of Fix tracker_x2wall Style contacthistory/mesh from restart file info
+Resetting global state of Fix contacthistory Style contacthistory from restart file info
+Resetting per-atom state of Fix contacthistory Style contacthistory from restart file info
+Setting up run at Tue Sep  5 17:41:45 2023
+
+Memory usage per processor = 213.696 Mbytes
+    Step    Atoms         KinEng           Time             Cu  Elapsed 
+  230002    18075  1.4524421e-09              0              0        0 
+  230003    18075  2.1026754e-09          5e-06      23961.897        1 
+Loop time of 0.0628837 on 12 procs for 1 steps with 18075 atoms, finish time Tue Sep  5 17:41:45 2023
+
+
+Pair  time (%) = 0.000450544 (0.716472)
+Neigh time (%) = 0 (0)
+Comm  time (%) = 5.75258e-06 (0.00914798)
+Outpt time (%) = 0.0552705 (87.8932)
+Other time (%) = 0.0071569 (11.3812)
+
+Nlocal:    1506.25 ave 18075 max 0 min
+Histogram: 11 0 0 0 0 0 0 0 0 1
+Nghost:    0 ave 0 max 0 min
+Histogram: 12 0 0 0 0 0 0 0 0 0
+Neighs:    8737.58 ave 104851 max 0 min
+Histogram: 11 0 0 0 0 0 0 0 0 1
+
+Total # of neighbors = 104851
+Ave neighs/atom = 5.80089
+Neighbor list builds = 0
+Dangerous builds = 0
+Setting up run at Tue Sep  5 17:41:45 2023
+
+Memory usage per processor = 207.746 Mbytes
+    Step    Atoms         KinEng           Time             Cu  Elapsed 
+  230003    18075  2.1026754e-09          5e-06              0        0 
+  240000    18075  0.00048631409        0.04999      182176.95     9997 
+  250000    18075   0.0008461648        0.09999      138623.41    19997 
+  260000    18075  0.00076437869        0.14999      133569.41    29997 
+  270000    18075  0.00056966114        0.19999      139211.99    39997 
+  280000    18075  0.00035754226        0.24999      141530.98    49997 
+  290000    18075  0.00018118583        0.29999      149007.92    59997 
+  300000    18075  6.0910183e-05        0.34999      145878.79    69997 
+  310000    18075  1.2978145e-05        0.39999      141104.01    79997 
+  320000    18075  6.8484507e-06        0.44999      140397.88    89997 
+  330000    18075  4.4802482e-06        0.49999      148006.56    99997 
+  340000    18075  3.1613092e-06        0.54999      158817.29   109997 
+  350000    18075  2.4889868e-06        0.59999      164721.83   119997 
+  360000    18075  1.9171331e-06        0.64999      172195.27   129997 
+  370000    18075  1.5964559e-06        0.69999      180402.09   139997 
+  380000    18075  1.2414079e-06        0.74999      184289.13   149997 
+  390000    18075  1.0092109e-06        0.79999      187952.97   159997 
+  400000    18075  9.1191627e-07        0.84999      189785.45   169997 
+  410000    18075  7.7558955e-07        0.89999      190445.65   179997 
+  420000    18075  6.4772683e-07        0.94999      191595.07   189997 
+  430000    18075  5.8139603e-07        0.99999      192597.04   199997 
+  440000    18075  5.3698861e-07        1.04999      193349.94   209997 
+  450000    18075  4.5194329e-07        1.09999         193332   219997 
+  460000    18075  3.8303547e-07        1.14999      195657.34   229997 
+  470000    18075  3.3166137e-07        1.19999      195909.62   239997 
+  480000    18075  2.9498988e-07        1.24999      197419.89   249997 
+  480003    18075  2.9463772e-07       1.250005      206385.65   250000 
+Loop time of 2259.25 on 12 procs for 250000 steps with 18075 atoms, finish time Tue Sep  5 18:19:25 2023
+
+
+Pair  time (%) = 89.5724 (3.9647)
+Neigh time (%) = 534.309 (23.6498)
+Comm  time (%) = 103.645 (4.5876)
+Outpt time (%) = 29.1264 (1.28921)
+Other time (%) = 1502.6 (66.5087)
+
+Nlocal:    1506.25 ave 17967 max 0 min
+Histogram: 11 0 0 0 0 0 0 0 0 1
+Nghost:    0.5 ave 4 max 0 min
+Histogram: 10 0 0 0 0 1 0 0 0 1
+Neighs:    8194.42 ave 98208 max 0 min
+Histogram: 11 0 0 0 0 0 0 0 0 1
+
+Total # of neighbors = 98333
+Ave neighs/atom = 5.44028
+Neighbor list builds = 1870
+Dangerous builds = 0
