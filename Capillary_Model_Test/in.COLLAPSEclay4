@@ -56,7 +56,7 @@ compute_modify		thermo_temp dynamic yes
 
 
 fix z1wall all mesh/surface/stress file mesh/z2.stl type 3  reference_point 0.0 0.0 0.0
-fix z2wall all mesh/surface/stress file mesh/z1.stl type 3  reference_point 0.0 0.0 0.01
+fix z2wall all mesh/surface/stress file mesh/z1.stl type 3  reference_point 0.0 0.0 0.06
 fix y1wall all mesh/surface/stress file mesh/y1.stl type 2 reference_point 0.0 0.0 0.0
 fix y2wall all mesh/surface/stress file mesh/y2.stl type 2 reference_point 0.0 0.15 0.0
 fix y2samplewall all mesh/surface/stress file mesh/y2sample.stl type 3 reference_point 0.0 0.048 0.0
