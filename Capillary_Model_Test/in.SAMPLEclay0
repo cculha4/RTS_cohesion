@@ -62,18 +62,18 @@ fix wall all wall/gran model hertz tangential history mesh n_meshes 7 meshes z1w
 
 #-----------------------Distributions for insertion-------------------------------------------------------
 
-fix pts1 all particletemplate/sphere 1111151 atom_type 1 density constant 2500 volume_limit 1.00E-30 radius constant 1E-03
+fix pts1 all particletemplate/sphere 1111151 atom_type 1 density constant 2500 volume_limit 1.00E-30 radius constant 0.0005
 
-fix pts2 all particletemplate/sphere 1111289 atom_type 1 density constant 2500 volume_limit 1.00E-30 radius constant 1E-03
+fix pts2 all particletemplate/sphere 1111289 atom_type 1 density constant 2500 volume_limit 1.00E-30 radius constant 0.0005
 
-fix pts3 all particletemplate/sphere 1111841 atom_type 1 density constant 2500 volume_limit 1.00E-30 radius constant 1E-03
+fix pts3 all particletemplate/sphere 1111841 atom_type 1 density constant 2500 volume_limit 1.00E-30 radius constant 0.0005
 
 
 fix		pdd1 all particledistribution/discrete 17903 3 pts1 0.4 pts2 0.3 pts3 0.3
 
 #---------------region for insertion and insertion ------------------------------------------------------------------------#
 
-region		bc block -0.0 0.06 -0.0 0.15 0.0 0.01 units box
+region		bc block -0.0 0.06 -0.0 0.15 0.0 0.06 units box
 
 group		nve_group region reg
 
@@ -99,11 +99,11 @@ fix         integr all nve/limit radius_ratio 0.001
 
 # --------------- output settings, include total thermal energy -----------------------------------------#
 
-dump		dmp1 all custom 1 post2/dump*.liggghts id type type x y z ix iy iz vx vy vz fx fy fz omegax omegay omegaz radius
+dump		dmp1 all custom 1 clay0/post2/dump*.liggghts id type type x y z ix iy iz vx vy vz fx fy fz omegax omegay omegaz radius
 run 1
 undump	dmp1
 
-dump		dmp1 all custom 1000 post2/dump*.liggghts id type type x y z ix iy iz vx vy vz fx fy fz omegax omegay omegaz radius
+dump		dmp1 all custom 1000 clay0/post2/dump*.liggghts id type type x y z ix iy iz vx vy vz fx fy fz omegax omegay omegaz radius
 
 
 #-----------Deposition--------------------------------------------------------------------------------------#
@@ -112,7 +112,7 @@ dump		dmp1 all custom 1000 post2/dump*.liggghts id type type x y z ix iy iz vx v
 run		200000
 
 #---- define region of interest to delete particles outside
-region	del_region block 0.0 0.06 0.0 0.048 0.0 0.01 side out
+region	del_region block 0.0 0.06 0.0 0.048 0.0 0.06 side out
 
 #---- remove atoms in region outside
 delete_atoms region del_region
