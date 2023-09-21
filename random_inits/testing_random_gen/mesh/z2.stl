@@ -1,0 +1,16 @@
+solid Mesh
+	facet normal 0.0. 0.0. 1.0.
+		outer loop
+			vertex 0.0 0.0 0.06
+			vertex 0.0  0.15 0.06
+			vertex  0.3  0.15 0.06
+		endloop
+	endfacet
+	facet normal 0.0. 0.0. 1.0.
+		outer loop
+			vertex 0.3 0.00 0.06
+			vertex 0.0 0.00 0.06
+			vertex  0.3  0.15 0.06
+		endloop
+	endfacet
+endsolid Mesh
