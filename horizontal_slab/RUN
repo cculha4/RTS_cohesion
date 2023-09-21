@@ -1,0 +1,10 @@
+#!/bin/sh
+mpirun -np 12 lmp_auto -in in.SAMPLE_thin
+mpirun -np 12 lmp_auto -in in.COLLAPSE_thin
+
+mpirun -np 12 lmp_auto -in in.SAMPLE_medium
+mpirun -np 12 lmp_auto -in in.COLLAPSE_medium
+
+mpirun -np 12 lmp_auto -in in.SAMPLE_thick
+mpirun -np 12 lmp_auto -in in.COLLAPSE_thick
+
